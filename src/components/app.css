@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.todo-form {
+    position: relative;
+    width: 1440px;
+    height: 768px;
+    background: linear-gradient(180deg, #CA94FF 0%, rgba(70, 6, 134, 0.81) 100%);
+}
+.Form {
+    position: absolute;
+    width: 650px;
+    height: 300px;
+    background: #dac9eb;
+    border-radius: 8px;
+    top: 259px;
+    right: 395px;
+}
+.Input-block {
+    position: absolute;
+    width: 551px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    background: transparent;
+    color: rgba(0, 0, 0, 0.4);
+    top: 203px;
+    right: 43px;
+}
+.Hide-btn {
+    position: absolute;
+    width: 133px;
+    height: 40px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    background: #FFE482;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    top: 247px;
+    right: 380px;
+}
+.Add-btn {
+    position: absolute;
+    width: 133px;
+    height: 40px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    top: 247px;
+    right: 128px;
+}
+.tasks {
+    padding-top: 25px;
+    padding-left: 50px;
+}
+.Completed-item {
+    text-decoration: line-through;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 19px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.Item {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 19px;
+    color: #000000;
+}
