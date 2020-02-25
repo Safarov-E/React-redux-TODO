@@ -5,6 +5,7 @@ import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 
 const initialState = ['Learn React', 'Redux is awesme'];
+
 function reducer(state = initialState, action) {
     if(action.type === 'ADD_VALUE') {
         return [

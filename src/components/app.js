@@ -9,14 +9,27 @@ class App extends Component {
     }
     addValue = (event) => {
         event.preventDefault();
-        this.props.onAddValue(this.inoutValue.value);
+        if(this.inoutValue.value !== '') {
+            this.inoutValue.classList.remove('active');
+            this.props.onAddValue(this.inoutValue.value);
+        } else {
+            this.inoutValue.classList.add('active');
+        }
         this.inoutValue.value = '';
     }
+    hideCompleted = (event) => {
+        event.preventDefault();
+        let itemValue = document.querySelectorAll('.Completed-item');
+        itemValue.forEach((item) => {
+            item.outerHTML = ''
+        })
+    }
     render() {
+        console.log(this.props.testStore)
         return (
             <div className="todo-form">
                 <form className="Form">
-                    <div className="tasks" onClick={this.learn} ref={this.myRef}>
+                    <div className="tasks" onClick={this.learn}>
                         {
                             this.props.testStore.map((item, index) => {
                                 return <p key={index} className="Item">{item}</p>
@@ -36,8 +49,8 @@ export default connect(
         testStore: state
     }),
     dispatch => ({
-        onAddValue: (valueName) => {
-            dispatch({type: 'ADD_VALUE', payload: valueName})
+        onAddValue: (name) => {
+            dispatch({type: 'ADD_VALUE', payload: name})
         }
     })
 )(App);

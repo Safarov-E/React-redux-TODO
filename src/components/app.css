@@ -33,6 +33,11 @@
     top: 203px;
     right: 43px;
 }
+.Input-block:focus { outline: none; }
+.active {
+    border: none;
+    outline: 2px solid #de7575
+}
 .Hide-btn {
     position: absolute;
     width: 133px;
